@@ -1,0 +1,30 @@
+Performing C++ SOURCE FILE Test HAS_MARCH_NATIVE failed with the following output:
+Change Dir: /Users/chao/Projects/qcec_final/qcec/build/CMakeFiles/CMakeScratch/TryCompile-Q9SvJr
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_215ec/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_215ec.dir/build.make CMakeFiles/cmTC_215ec.dir/build
+Building CXX object CMakeFiles/cmTC_215ec.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAS_MARCH_NATIVE  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk   -march=native -MD -MT CMakeFiles/cmTC_215ec.dir/src.cxx.o -MF CMakeFiles/cmTC_215ec.dir/src.cxx.o.d -o CMakeFiles/cmTC_215ec.dir/src.cxx.o -c /Users/chao/Projects/qcec_final/qcec/build/CMakeFiles/CMakeScratch/TryCompile-Q9SvJr/src.cxx
+clang: error: the clang compiler does not support '-march=native'
+make[1]: *** [CMakeFiles/cmTC_215ec.dir/src.cxx.o] Error 1
+make: *** [cmTC_215ec/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test CMAKE_CXX_LINK_NO_PIE_SUPPORTED failed with the following output:
+Change Dir: /Users/chao/Projects/qcec_final/qcec/build/CMakeFiles/CMakeScratch/TryCompile-buLPoN
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_543fe/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_543fe.dir/build.make CMakeFiles/cmTC_543fe.dir/build
+Building CXX object CMakeFiles/cmTC_543fe.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_CXX_LINK_NO_PIE_SUPPORTED  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -MD -MT CMakeFiles/cmTC_543fe.dir/src.cxx.o -MF CMakeFiles/cmTC_543fe.dir/src.cxx.o.d -o CMakeFiles/cmTC_543fe.dir/src.cxx.o -c /Users/chao/Projects/qcec_final/qcec/build/CMakeFiles/CMakeScratch/TryCompile-buLPoN/src.cxx
+Linking CXX executable cmTC_543fe
+/opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_543fe.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -no_pie CMakeFiles/cmTC_543fe.dir/src.cxx.o -o cmTC_543fe 
+ld: warning: -no_pie is deprecated when targeting new OS versions
+ld: warning: -no_pie ignored for arm64
+
+
+Source file was:
+int main() { return 0; }
+
