@@ -1,0 +1,5 @@
+if(EXISTS "/Users/chao/Projects/qcec_final/qcec/build/test/qcec_test[1]_tests.cmake")
+  include("/Users/chao/Projects/qcec_final/qcec/build/test/qcec_test[1]_tests.cmake")
+else()
+  add_test(qcec_test_NOT_BUILT qcec_test_NOT_BUILT)
+endif()
